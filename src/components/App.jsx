@@ -1,9 +1,10 @@
 import React from "react";
-import { moviesData } from "../moviesData";
+// import { moviesData } from "../moviesData";
 import MovieItem from "./MovieItem";
+import { API_URL, API_KEY_3 } from "../utils/api";
 
 //UI = fn(state,props)
-console.log(moviesData);
+//onsole.log(moviesData);
 
 // function removeMovie(movie) {
 //   const updateMovies = this.state.movies.filter(function(item){
@@ -22,9 +23,22 @@ class App extends React.Component {
     super();
 
     this.state = {
-      movies: moviesData,
+      movies: [],
       moviesWillWatch: []
     };
+  }
+
+  componentDidMount() {
+    console.log("didMount");
+    fetch(`${API_URL}/discover/movie?api_key=${API_KEY_3}`).then((response) =>{
+      console.log('then')
+      return response.json()
+    }).then((data) =>{
+      console.log('data', data)
+      this.setState({
+        movies: data.results
+      })
+    })
   }
 
   removeMovie = (movie) => {
@@ -40,20 +54,21 @@ class App extends React.Component {
   };
 
   addMovieToWillWatch = (movie) => {
-    console.log(movie)
+    console.log(movie);
     const updateMovies = [...this.state.moviesWillWatch, movie];
-    
 
     // const updateMovies = [...this.state.moviesWillWatch];
     // updateMovies.push(movie);
 
-    console.log(updateMovies)
+    console.log(updateMovies);
 
-    this.setState({moviesWillWatch:updateMovies})
-  }
+    this.setState({ moviesWillWatch: updateMovies });
+  };
 
   removeMovieFromWillWatch = (movie) => {
-    const updateMoviesWillWatch = this.state.moviesWillWatch.filter(function (item) {
+    const updateMoviesWillWatch = this.state.moviesWillWatch.filter(function (
+      item
+    ) {
       return item.id !== movie.id;
     });
     console.log(updateMoviesWillWatch);
@@ -80,11 +95,9 @@ class App extends React.Component {
                       removeMovieFromWillWatch={this.removeMovieFromWillWatch}
                     />
                   </div>
-
                 );
               })}
             </div>
-
           </div>
 
           <div className="col-3">
