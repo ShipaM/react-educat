@@ -9,6 +9,11 @@ class MovieItem extends React.Component {
     };
   }
 
+
+  // componentWillUnmount (){
+  //   console.log('unmount', this.props.data.title)
+  // }
+
   render() {
     const {
       movie,
