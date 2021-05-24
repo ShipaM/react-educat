@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/ShipaM/react-educat/precache-manifest.c626a2d50ccf42559a1d8a821e4e62ad.js"
+  "/react-educat/precache-manifest.e9993f35cc426a711aad83d1f9015fe4.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/ShipaM/react-educat/index.html", {
+workbox.routing.registerNavigationRoute("/react-educat/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });

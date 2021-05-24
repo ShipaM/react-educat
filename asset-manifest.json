@@ -1,13 +1,13 @@
 {
-  "main.js": "/ShipaM/react-educat/static/js/main.43535583.chunk.js",
-  "main.js.map": "/ShipaM/react-educat/static/js/main.43535583.chunk.js.map",
-  "runtime~main.js": "/ShipaM/react-educat/static/js/runtime~main.752d77b5.js",
-  "runtime~main.js.map": "/ShipaM/react-educat/static/js/runtime~main.752d77b5.js.map",
-  "static/css/2.f5c52f1b.chunk.css": "/ShipaM/react-educat/static/css/2.f5c52f1b.chunk.css",
-  "static/js/2.31a2be60.chunk.js": "/ShipaM/react-educat/static/js/2.31a2be60.chunk.js",
-  "static/js/2.31a2be60.chunk.js.map": "/ShipaM/react-educat/static/js/2.31a2be60.chunk.js.map",
-  "index.html": "/ShipaM/react-educat/index.html",
-  "precache-manifest.c626a2d50ccf42559a1d8a821e4e62ad.js": "/ShipaM/react-educat/precache-manifest.c626a2d50ccf42559a1d8a821e4e62ad.js",
-  "service-worker.js": "/ShipaM/react-educat/service-worker.js",
-  "static/css/2.f5c52f1b.chunk.css.map": "/ShipaM/react-educat/static/css/2.f5c52f1b.chunk.css.map"
+  "main.js": "/react-educat/static/js/main.43535583.chunk.js",
+  "main.js.map": "/react-educat/static/js/main.43535583.chunk.js.map",
+  "runtime~main.js": "/react-educat/static/js/runtime~main.6b2d068e.js",
+  "runtime~main.js.map": "/react-educat/static/js/runtime~main.6b2d068e.js.map",
+  "static/css/2.f5c52f1b.chunk.css": "/react-educat/static/css/2.f5c52f1b.chunk.css",
+  "static/js/2.31a2be60.chunk.js": "/react-educat/static/js/2.31a2be60.chunk.js",
+  "static/js/2.31a2be60.chunk.js.map": "/react-educat/static/js/2.31a2be60.chunk.js.map",
+  "index.html": "/react-educat/index.html",
+  "precache-manifest.e9993f35cc426a711aad83d1f9015fe4.js": "/react-educat/precache-manifest.e9993f35cc426a711aad83d1f9015fe4.js",
+  "service-worker.js": "/react-educat/service-worker.js",
+  "static/css/2.f5c52f1b.chunk.css.map": "/react-educat/static/css/2.f5c52f1b.chunk.css.map"
 }
